@@ -1,0 +1,63 @@
+body {
+    font-family: 'Courier Prime', monospace;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #fffff0;
+}
+
+.logo {
+    font-weight: bold;
+    width: 22%;
+    height: 25%;
+    margin-left: 20px;
+}
+
+
+.main-content{
+    padding-left: 25%;
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+
+.skills-header{
+    font-weight: bold;
+    color: #030f42;
+    font-size: 30px;
+}
+
+.education span {
+    display: flex;
+    align-items: center;
+}
+
+.icon-circle {
+    width: 50px;
+    height: 45px;
+    background-color: #030f42;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.education i {
+    margin-right: 20px;
+    font-size: 25px;
+    color: white;
+    align-items: center;
+}
+
+.fa-chevron-right{
+    padding-left: 6%;
+}
+
+@media (max-width:768px) {
+    .main-content{
+        margin-right: 60%;
+        padding-left: 8%;
+        width: 90%;
+    }
+}

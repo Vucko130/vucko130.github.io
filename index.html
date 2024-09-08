@@ -1,5 +1,109 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jalish Mahmud Sujon</title>
 
-{% include landing.html %}
+    <link rel="shortcut icon" href="/images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Darker+Grotesque:wght@300&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <input type="checkbox" id="nav-check">
+            <div class="nav-header">
+              <div class="nav-title">
+                JALISH MAHMUD SUJON
+              </div>
+            </div>
+            <div class="nav-btn">
+              <label for="nav-check">
+                <span></span>
+                <span></span>
+                <span></span>
+              </label>
+            </div>
+            
+            <ul class="nav-list">
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="skills.html">SKILLS</a></li>
+              <li><a href="contacts.html">CONTACT</a></li>
+            </ul>
+          </nav>
+    </header>
+
+    <main>
+        <section class="intro">
+            <div class="intro-content">
+                <img src="images/portfolio.jpeg" alt="Jalish Mahmud Sujon" class="profile-pic">
+                <div class="text-content">
+                    <h1>Hi,</h1>
+                     <p id="typing-text"></p>
+                    <span>
+                        <p style="display:inline-block; margin-right:25%;" class="note">Follow me on</p>
+                      </span>
+                      <div class="icons">
+                        <span>
+                            <a href="https://x.com/JalishMahmud" target="_blank">
+                                <i class="fa-brands fa-x-twitter"></i>
+                            </a>
+                            <a href="https://www.facebook.com/jalishmahmudsujon" target="_blank">
+                                <i class="fa-brands fa-facebook"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/jalish-mahmud-sujon-ba1928101/" target="_blank">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                            <a href="https://github.com/Vucko130" target="_blank">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="https://www.threads.net/@vucko130" target="_blank">
+                                <i class="fa-solid fa-at"></i>
+                            </a>
+                            <a href="https://instagram.com/vucko130" target="_blank">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="mailto:jalish@alphaxb.com">
+                                <i class="fa-solid fa-envelope"></i>
+                            </a>
+                        </span>
+                    </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+        const textToType = [
+    "I'm Jalish Mahmud Sujon, a civil engineer with a B.Sc. and a diploma in Civil Engineering. I'm currently pursuing an M.Sc. in Civil Engineering at The University of Memphis, where I focus on integrating technology with traditional engineering practices.",
+    "I enjoy developing websites and exploring new software, which allows me to fuse my technical skills with innovative digital solutions."
+];
+
+let typingTextElement = document.getElementById("typing-text");
+let typingDelay = 20;
+let textIndex = 0;
+let charIndex = 0;
+
+function typeText() {
+    if (charIndex < textToType[textIndex].length) {
+        typingTextElement.innerHTML += textToType[textIndex].charAt(charIndex);
+        charIndex++;
+        setTimeout(typeText, typingDelay);
+    } else if (textIndex < textToType.length - 1) {
+        textIndex++;
+        charIndex = 0;
+        typingTextElement.innerHTML += "<br><br>";
+        setTimeout(typeText, typingDelay + 500);
+    }
+}
+
+document.addEventListener("DOMContentLoaded", typeText);
+    </script>
+</body>
+</html>

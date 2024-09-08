@@ -1,0 +1,142 @@
+body {
+    font-family: 'Courier Prime', monospace;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #fffff0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    padding-right: 45px;
+    /* border-bottom: 1px solid #ddd; */
+}
+
+.logo {
+    font-weight: bold;
+    width: 22%;
+    height: 25%;
+    margin-left: 20px;
+}
+
+/* nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+} */
+
+.intro {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.intro-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profile-pic {
+    border-radius: 258% 204% 146% 187%;
+    width: 50%;
+    height: 50%;
+    margin-right: 10%;
+}
+
+.text-content{
+    flex: 1;
+    text-align: justify;
+}
+
+.text-content h1 {
+    font-size: 40px;
+    margin-bottom: 0px;
+    color: #030f42;
+}
+
+.text-content p{
+    font-size: 14px;
+}
+
+.note {
+    margin-top: 10px;
+    color: #2fbeff;
+    font-weight: bold;
+}
+
+.portfolio {
+    padding: 40px 20px;
+    background-color: #f8f8f8;
+}
+
+.portfolio h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.fa-brands{
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.icons a{
+    text-decoration: none;
+    color: black;
+}
+
+.fa-facebook{
+    padding-left: 10px;
+}
+
+
+.fa-linkedin{
+    padding-left: 10px;
+}
+
+.fa-github{
+    padding-left: 10px;
+}
+
+.fa-at{
+    padding-left: 10px;
+}
+
+.fa-instagram{
+    padding-left: 10px;
+}
+
+.fa-envelope{
+    padding-left: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #ddd;
+    background-color: #fff;
+    font-size: 14px;
+}
+
+
+@media (max-width: 768px) {
+    .intro-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .profile-pic {
+        margin-bottom: 20px;
+        width: 70%;
+    }
+
+    .text-content {
+        padding-left: 0;
+    }
+}
