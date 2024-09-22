@@ -22,12 +22,21 @@ header {
     margin-left: 20px;
 }
 
-/* nav a {
-    margin-left: 20px;
-    text-decoration: none;
-    color: #333;
-    font-size: 18px;
-} */
+.typing-text{
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-name: typing-text;
+}
+
+@keyframes typing-text {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1
+    }
+}
 
 .intro {
     padding: 40px 20px;
@@ -124,22 +133,4 @@ footer {
     padding: 20px;
     border-top: 1px solid #ddd;
     font-size: 14px;
-}
-
-
-@media (max-width: 768px) {
-    .intro-content {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .profile-pic {
-        margin-bottom: 20px;
-        width: 70%;
-    }
-
-    .text-content {
-        padding-left: 0;
-    }
 }

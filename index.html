@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Darker+Grotesque:wght@300&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Darker+Grotesque:wght@300&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -44,7 +44,7 @@
                 <img src="images/portfolio.jpeg" alt="Jalish Mahmud Sujon" class="profile-pic">
                 <div class="text-content">
                     <h1>Hi,</h1>
-                     <p id="typing-text"></p>
+                    <p id="typing-text" class="typing-text">I'm Jalish Mahmud Sujon, a civil engineer with a B.Sc. and a diploma in Civil Engineering. I'm currently pursuing an M.Sc. in Civil Engineering at The University of Memphis, where I focus on integrating technology with traditional engineering practices. <br><br> I enjoy developing websites and exploring new software, which allows me to fuse my technical skills with innovative digital solutions.</p>
                     <span>
                         <p style="display:inline-block; margin-right:25%;" class="note">Follow me on</p>
                       </span>
@@ -79,32 +79,6 @@
             </div>
         </section>
     </main>
-    <script>
-        const textToType = [
-    "I'm Jalish Mahmud Sujon, a civil engineer with a B.Sc. and a diploma in Civil Engineering. I'm currently pursuing an M.Sc. in Civil Engineering at The University of Memphis, where I focus on integrating technology with traditional engineering practices.",
-    "I enjoy developing websites and exploring new software, which allows me to fuse my technical skills with innovative digital solutions."
-];
-
-let typingTextElement = document.getElementById("typing-text");
-let typingDelay = 20;
-let textIndex = 0;
-let charIndex = 0;
-
-function typeText() {
-    if (charIndex < textToType[textIndex].length) {
-        typingTextElement.innerHTML += textToType[textIndex].charAt(charIndex);
-        charIndex++;
-        setTimeout(typeText, typingDelay);
-    } else if (textIndex < textToType.length - 1) {
-        textIndex++;
-        charIndex = 0;
-        typingTextElement.innerHTML += "<br><br>";
-        setTimeout(typeText, typingDelay + 500);
-    }
-}
-
-document.addEventListener("DOMContentLoaded", typeText);
-    </script>
 <footer>Copyright © 2024 @Jalish Mahmud. All Right Reserved</footer>
 </body>
 </html>
