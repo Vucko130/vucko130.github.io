@@ -1,4 +1,6 @@
 body {
+    display: flex;
+    flex-direction: column;
     font-family: 'Courier Prime', monospace;
     margin: 0;
     padding: 0;
@@ -12,7 +14,6 @@ header {
     align-items: center;
     padding: 5px;
     padding-right: 45px;
-    /* border-bottom: 1px solid #ddd; */
 }
 
 .logo {
@@ -20,22 +21,6 @@ header {
     width: 22%;
     height: 25%;
     margin-left: 20px;
-}
-
-.typing-text{
-    animation-duration: 1s;
-    animation-fill-mode: both;
-    animation-name: typing-text;
-}
-
-@keyframes typing-text {
-    from {
-        opacity: 0;
-        transform: translateX(-100%);
-    }
-    to {
-        opacity: 1
-    }
 }
 
 .intro {
@@ -65,7 +50,7 @@ header {
 
 .text-content h1 {
     font-size: 40px;
-    margin-bottom: 0px;
+    margin-bottom: -10px;
     color: #030f42;
 }
 
@@ -133,4 +118,41 @@ footer {
     padding: 20px;
     border-top: 1px solid #ddd;
     font-size: 14px;
+}
+
+.icons{
+    margin-bottom: -10px;
+}
+
+.typing-text{
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-name: typing-text;
+}
+
+@keyframes typing-text {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@media (max-width: 768px) {
+    .intro-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .profile-pic {
+        margin-bottom: 20px;
+        width: 70%;
+    }
+
+    .text-content {
+        padding-left: 0;
+    }
 }
