@@ -81,8 +81,13 @@
     </main>
     <section id="copy-right">
         <div class="copy-right-sec"> 
-            © 2024 @Jalish Mahmud. All Right Reserved  
+            © <span id="year"></span> @Jalish Mahmud. All Right Reserved  
         </div>
       </section>
+      <script>
+        const yearSpan = document.getElementById('year');
+        const currentYear = new Date().getFullYear();
+        yearSpan.textContent = currentYear;
+      </script>
 </body>
 </html>
