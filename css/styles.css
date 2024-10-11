@@ -109,16 +109,19 @@ header {
     padding-left: 10px;
 }
 
-footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
+.copy-right-sec{
+    padding: 1.8rem;
+    background: rgb(237, 222, 204);
+    color: black;
     text-align: center;
-    padding: 20px;
-    border-top: 1px solid #ddd;
-    font-size: 14px;
-}
+  }
+  .copy-right-sec a{
+    color: #fcd462;
+    font-weight: 500;
+  }
+  a{
+    text-decoration:none;
+  }
 
 .icons{
     margin-bottom: -10px;
