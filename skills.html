@@ -1,106 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jalish Mahmud Sujon | Skills</title>
-    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
-
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/skills.css">
-    <link rel="stylesheet" href="css/nav.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Darker+Grotesque:wght@300&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jalish Mahmud Sujon | Background</title>
+  <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@300;400;500&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/skills-new.css">
 </head>
 <body>
-    <header>
-        <nav class="nav">
-            <input type="checkbox" id="nav-check">
-            <div class="nav-header">
-              <div class="nav-title">
-                JALISH MAHMUD SUJON
-              </div>
-            </div>
-            <div class="nav-btn">
-              <label for="nav-check">
-                <span></span>
-                <span></span>
-                <span></span>
-              </label>
-            </div>
-            
-            <ul class="nav-list">
-              <li><a href="./">HOME</a></li>
-              <li><a href="skills">SKILLS</a></li>
-              <li><a href="contacts">CONTACT</a></li>
+  <div class="grid-bg"></div>
+  <header>
+    <nav class="nav" id="main-nav">
+      <input type="checkbox" id="nav-check">
+      <div class="nav-header">
+        <div class="nav-title">Jalish <span>Mahmud</span> Sujon</div>
+      </div>
+      <div class="nav-btn">
+        <label for="nav-check"><span></span><span></span><span></span></label>
+      </div>
+      <ul class="nav-list">
+        <li><a href="./">Home</a></li>
+        <li><a href="skills" class="active">Background</a></li>
+        <li><a href="contacts">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="page-hero-inner">
+        <div class="page-label reveal"><span class="label-line"></span>Education, experience & skills</div>
+        <h1 class="page-title reveal" style="--delay:0.1s">My<br><em>Background</em></h1>
+        <a href="Resume_of_Jalish_Mahmud_Sujon.pdf" download class="btn-cv reveal" style="--delay:0.2s">
+          <i class="fa-solid fa-download"></i> Download CV
+        </a>
+      </div>
+    </section>
+
+    <section class="skills-section">
+      <div class="skills-inner">
+
+        <!-- EXPERIENCE -->
+        <div class="card full-width reveal" style="--delay:0s">
+          <div class="card-icon"><i class="fa-solid fa-briefcase"></i></div>
+          <div class="card-content">
+            <h2 class="card-title">Work Experience</h2>
+            <ul class="card-list">
+              <li>
+                <div class="item-dot"></div>
+                <div class="item-text">
+                  <strong>Site Engineer — M/S Monir Traders</strong>
+                  <span>1 Year · Barishal, Bangladesh</span>
+                  <p class="item-desc">Supervised site operations for adherence to project specifications and quality standards. Conducted routine inspections, managed project schedules, budgets, and progress reports, and engaged directly with stakeholders on project status.</p>
+                </div>
+              </li>
             </ul>
-          </nav>
-    </header>
+          </div>
+        </div>
 
-    <div class="main-content">
-        <div class="education">
-            <span>
-                <i class="fa-solid fa-graduation-cap icon-circle"></i>
-                <h1 class="skills-header">Education</h1>
-            </span>
-            <span>
-                <i class="fa-solid fa-chevron-right" style="color: #d19d48; font-size: 15px;"></i>
-                <p>MBA in Cybersecurity Management | Saint Leo University (Running)</p>
-            </span>
-            <span>
-                <i class="fa-solid fa-chevron-right" style="color: #d19d48; font-size: 15px;"></i>
-                <p>B.Sc. in Civil Engineering | University of Global Village, Barishal</p>
-            </span>
-            <span>
-                <i class="fa-solid fa-chevron-right" style="color: #d19d48; font-size: 15px;"></i>
-                <p>Diploma in Civil Engineering | Infra Polytechnic Institute, Barishal</p>
-            </span>
+        <!-- EDUCATION -->
+        <div class="card reveal" style="--delay:0.05s">
+          <div class="card-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+          <div class="card-content">
+            <h2 class="card-title">Education</h2>
+            <ul class="card-list">
+              <li>
+                <div class="item-dot accent"></div>
+                <div class="item-text">
+                  <strong>MBA — Cybersecurity Management</strong>
+                  <span>Saint Leo University · In Progress</span>
+                </div>
+              </li>
+              <li>
+                <div class="item-dot"></div>
+                <div class="item-text">
+                  <strong>B.Sc. in Civil Engineering</strong>
+                  <span>University of Global Village, Barishal · 2023 · GPA 3.53 / 4.0</span>
+                </div>
+              </li>
+              <li>
+                <div class="item-dot"></div>
+                <div class="item-text">
+                  <strong>Diploma in Civil Engineering</strong>
+                  <span>Infra Polytechnic Institute, Barishal · 2019 · GPA 2.69 / 4.0</span>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="education">
-            <span>
-                <center><i class="fa-solid fa-certificate icon-circle"></i></center>
-                <h1 class="skills-header">Certifications</h1>
-            </span>
-            <span>
-                <i class="fa-solid fa-chevron-right" style="color: #d19d48; font-size: 15px;"></i>
-                <p>IELTS</p>
-            </span>
-            <span>
-                <i class="fa-solid fa-chevron-right" style="color: #d19d48; font-size: 15px;"></i>
-                <p>Road Construction from RHD, Barishal, Bangladesh</p>
-            </span>
+
+        <!-- CERTIFICATIONS & TRAINING -->
+        <div class="card reveal" style="--delay:0.1s">
+          <div class="card-icon"><i class="fa-solid fa-certificate"></i></div>
+          <div class="card-content">
+            <h2 class="card-title">Certifications &amp; Training</h2>
+            <ul class="card-list">
+              <li>
+                <div class="item-dot"></div>
+                <div class="item-text">
+                  <strong>IELTS Academic</strong>
+                  <span>Overall Band Score 7.0 · 2024</span>
+                </div>
+              </li>
+              <li>
+                <div class="item-dot"></div>
+                <div class="item-text">
+                  <strong>Road Construction Training</strong>
+                  <span>Roads &amp; Highway Department, Barishal · 6 Months · 2018</span>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="education">
-            <span>
-                <center><i class="fa-solid fa-gear icon-circle"></i></center>
-                <h1 class="skills-header">Skills</h1>
-            </span>
-            <span>
-                <i class="fa-solid fa-chevron-right" style="color: #d19d48; font-size: 15px;"></i>
-                <p>Project scheduling and coordination</p>
-            </span>
-            <span>
-                <i class="fa-solid fa-chevron-right" style="color: #d19d48; font-size: 15px;"></i>
-                <p>Budgeting and cost estimation</p>
-            </span>
-            <span>
-                <i class="fa-solid fa-chevron-right" style="color: #d19d48; font-size: 15px;"></i>
-                <p>Autocad 2D, 3D, 3DS Max</p>
-            </span>
-            <span>
-                <i class="fa-solid fa-chevron-right" style="color: #d19d48; font-size: 15px;"></i>
-                <p>Photoshop</p>
-            </span>
+
+        <!-- ENGINEERING SKILLS -->
+        <div class="card reveal" style="--delay:0.15s">
+          <div class="card-icon"><i class="fa-solid fa-compass-drafting"></i></div>
+          <div class="card-content">
+            <h2 class="card-title">Engineering Skills</h2>
+            <ul class="card-list">
+              <li><div class="item-dot"></div><div class="item-text"><strong>Project Scheduling &amp; Coordination</strong></div></li>
+              <li><div class="item-dot"></div><div class="item-text"><strong>Budgeting &amp; Cost Estimation</strong></div></li>
+              <li><div class="item-dot"></div><div class="item-text"><strong>Site Supervision &amp; Quality Control</strong></div></li>
+              <li><div class="item-dot"></div><div class="item-text"><strong>AutoCAD 2D / 3D · 3DS Max</strong></div></li>
+            </ul>
+          </div>
         </div>
+
+        <!-- TECHNICAL SKILLS -->
+        <div class="card reveal" style="--delay:0.2s">
+          <div class="card-icon"><i class="fa-solid fa-terminal"></i></div>
+          <div class="card-content">
+            <h2 class="card-title">Technical &amp; Digital</h2>
+            <ul class="card-list">
+              <li><div class="item-dot"></div><div class="item-text"><strong>Self-Hosted Infrastructure (Docker, WSL2, Linux)</strong></div></li>
+              <li><div class="item-dot"></div><div class="item-text"><strong>Web Development &amp; WordPress</strong></div></li>
+              <li><div class="item-dot"></div><div class="item-text"><strong>Reverse Proxy &amp; Cloudflare (Caddy)</strong></div></li>
+              <li><div class="item-dot"></div><div class="item-text"><strong>2FA &amp; Password Management Systems</strong></div></li>
+              <li><div class="item-dot"></div><div class="item-text"><strong>Microsoft Office Suite · Canva · Photoshop</strong></div></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- LANGUAGES -->
+        <div class="card reveal" style="--delay:0.25s">
+          <div class="card-icon"><i class="fa-solid fa-language"></i></div>
+          <div class="card-content">
+            <h2 class="card-title">Languages</h2>
+            <ul class="card-list">
+              <li>
+                <div class="item-dot"></div>
+                <div class="item-text">
+                  <strong>English</strong>
+                  <span>Professional proficiency · IELTS 7.0</span>
+                </div>
+              </li>
+              <li>
+                <div class="item-dot"></div>
+                <div class="item-text">
+                  <strong>Bangla</strong>
+                  <span>Native</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="copy-right-sec">
+      © <span id="year"></span> Jalish Mahmud Sujon · All Rights Reserved
     </div>
-    <section id="copy-right">
-        <div class="copy-right-sec"> 
-            © 2024 @Jalish Mahmud. All Right Reserved  
-        </div>
-      </section>
+  </footer>
 
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const nav = document.getElementById('main-nav');
+    window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 40));
+    const reveals = document.querySelectorAll('.reveal');
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.style.transitionDelay = e.target.style.getPropertyValue('--delay') || '0s';
+          e.target.classList.add('visible');
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    reveals.forEach(r => io.observe(r));
+  </script>
 </body>
 </html>

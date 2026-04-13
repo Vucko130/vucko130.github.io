@@ -1,0 +1,241 @@
+/* ===== PAGE HERO ===== */
+.page-hero {
+  position: relative;
+  z-index: 1;
+  padding: 10rem 3rem 4rem;
+  border-bottom: 1px solid var(--border);
+  background: radial-gradient(ellipse 60% 50% at 30% 60%, rgba(79,209,197,0.06) 0%, transparent 70%);
+}
+
+.page-hero-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.page-label {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-family: var(--font-ui);
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 1.5rem;
+}
+
+.label-line {
+  display: block;
+  width: 40px; height: 1px;
+  background: var(--accent);
+}
+
+.page-title {
+  font-family: var(--font-display);
+  font-size: clamp(2.8rem, 6vw, 5rem);
+  line-height: 1.05;
+  color: var(--text);
+  letter-spacing: -0.02em;
+}
+
+.page-title em {
+  font-style: italic;
+  color: var(--accent);
+}
+
+/* ===== SKILLS SECTION ===== */
+.skills-section {
+  position: relative;
+  z-index: 1;
+  padding: 5rem 3rem;
+}
+
+.skills-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+/* ===== CARDS ===== */
+.card {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 2.5rem;
+  display: flex;
+  gap: 1.5rem;
+  transition: border-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 2px; height: 0;
+  background: var(--accent);
+  transition: height 0.4s var(--ease-out);
+}
+
+.card:hover {
+  border-color: rgba(79, 209, 197, 0.3);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.3);
+}
+
+.card:hover::before { height: 100%; }
+
+.card-icon {
+  width: 46px; height: 46px;
+  min-width: 46px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent);
+  font-size: 1.1rem;
+  transition: background 0.3s;
+}
+
+.card:hover .card-icon {
+  background: rgba(79, 209, 197, 0.1);
+}
+
+.card-content { flex: 1; }
+
+.card-title {
+  font-family: var(--font-ui);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: 0.02em;
+  margin-bottom: 1.5rem;
+}
+
+.card-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.card-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.item-dot {
+  width: 5px; height: 5px;
+  min-width: 5px;
+  border-radius: 50%;
+  background: var(--accent2);
+  margin-top: 0.45rem;
+}
+
+.item-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.item-text strong {
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 0.88rem;
+  color: var(--text);
+}
+
+.item-text span {
+  font-family: var(--font-ui);
+  font-size: 0.75rem;
+  color: var(--muted);
+  letter-spacing: 0.04em;
+}
+
+.card.full-width { grid-column: 1 / -1; }
+
+.card-subtitle {
+  font-family: var(--font-ui);
+  font-weight: 400;
+  font-size: 0.72rem;
+  color: var(--accent);
+  letter-spacing: 0.06em;
+  margin-left: 0.75rem;
+}
+
+.item-dot.accent { background: var(--accent); }
+.item-dot.current { background: var(--accent2); }
+
+.item-desc {
+  font-family: var(--font-body);
+  font-size: 0.82rem;
+  color: var(--muted);
+  line-height: 1.7;
+  margin-top: 0.35rem;
+}
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.15rem 0.55rem;
+  border-radius: 2px;
+  font-family: var(--font-ui);
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-left: 0.6rem;
+  vertical-align: middle;
+}
+
+.tag-done {
+  background: rgba(79, 209, 197, 0.1);
+  color: var(--accent);
+  border: 1px solid rgba(79, 209, 197, 0.25);
+}
+
+.tag-current {
+  background: rgba(246, 173, 85, 0.1);
+  color: var(--accent2);
+  border: 1px solid rgba(246, 173, 85, 0.25);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .page-hero { padding: 8rem 1.5rem 3rem; }
+  .skills-section { padding: 3rem 1.5rem; }
+  .skills-inner { grid-template-columns: 1fr; }
+  .card { padding: 1.75rem; }
+  .card.full-width { grid-column: auto; }
+}
+
+.btn-cv {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-top: 2rem;
+  padding: 0.75rem 1.6rem;
+  background: transparent;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  font-family: var(--font-ui);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border-radius: 2px;
+  transition: background 0.2s, color 0.2s, transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-cv:hover {
+  background: var(--accent);
+  color: var(--bg);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(79, 209, 197, 0.2);
+}
